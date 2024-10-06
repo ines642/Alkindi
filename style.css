@@ -34,6 +34,8 @@ body {
     z-index: 1;
 }
 
+/* header */
+
 header {
     width: 90%;
     display: flex;
@@ -126,6 +128,8 @@ nav li:hover::after {
     
 }
 
+/* main */
+
 
 main {
     height: auto;
@@ -141,6 +145,8 @@ section {
     margin-bottom: 10em;
     z-index: 100;
 }
+
+/* hero */
 
 .hero {
     justify-content: center;
@@ -192,6 +198,8 @@ width: 100%;
     z-index: 100;
 }
 
+/* about us */
+
 .about {
     width: 90%;
     justify-content: space-around;
@@ -207,6 +215,7 @@ width: 100%;
     gap: 4em;
 }
 .secttl {
+    font-family: 'Merriweather';
     position: relative;
     top: 0;
     font-size: 3rem;
@@ -246,6 +255,8 @@ width: 100%;
     transform: translate(100%);
 }  
 
+/* why joining us  */
+
 .why {
     align-items: center;
     flex-direction: column;
@@ -276,7 +287,7 @@ width: 100%;
 
 }
 .w:hover{ 
-transform: scale(1.1);
+transform: scale(1.2);
 transition: 0.8s;
 }
 .wimg {
@@ -326,6 +337,9 @@ transition: 0.8s;
     top: -50%;
 }
 
+
+/* where to finds us */
+
 .where {
     height: 110vh;
     align-items: center;
@@ -356,6 +370,9 @@ transition: 0.8s;
     align-content: center;
 }
 
+
+/* what are you waiting for  */
+
 .waiting {
     flex-direction: column;
     justify-content: center;
@@ -377,7 +394,7 @@ transition: 0.8s;
 
 /* General Footer Styling */
 footer {
-    padding: 40px 0;
+    padding: 2em 0;
     width: 80%;
     font-size: 1.5rem;
 }
@@ -388,7 +405,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 1.5em;
 }
 
 .footer-container > div {
@@ -399,8 +416,7 @@ footer {
 /* Headings in Footer */
 .footer-container h4 {
     font-size: 1.3rem;
-    color: #608df7;
-    /* Light blue */
+    color:var(--style);
     margin-bottom: 1em;
 }
 
@@ -421,7 +437,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: #608df7;
+    color: var(--style);
 }
 
 /* Contact Section Styling */
@@ -433,6 +449,7 @@ footer {
 /* Social Media Section Styling */
 .footer-social .social-icons {
     display: flex;
+    justify-content: center;
 }
 
 .footer-social .social-icons a {
@@ -454,6 +471,7 @@ footer {
     color: #f8f9ff;
 }
 
+/* menu bar styling */
 
 .menu{
     font-size: 2rem;
@@ -501,6 +519,7 @@ footer {
 } 
 
 
+/* text scrolling animation */
 
 .secttl , .seccnt{
     opacity: 0;
@@ -522,13 +541,11 @@ footer {
   }
   header{
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
    
   }
   .menu{
-    display: flex;
-    
- 
+    display: flex;  
   }
 
   .nav-links.show {
@@ -581,6 +598,9 @@ min-height: 50vh;
 align-items: center;
 
 }
+.seccnt{
+    font-size: 1.8rem;
+}
 .about .bg{
 width: 100%;
 overflow-x: hidden;
@@ -607,6 +627,8 @@ overflow-x: hidden;
 .where .cnt{
     width: 90%;
     align-items: center;
+    min-height: 90vh;
+    justify-content: center;
 }
 .map{
     height: auto;
